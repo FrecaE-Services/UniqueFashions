@@ -1,0 +1,1819 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UNIQUE FASHIONS | Premium Men's Fashion | Luwuum Street, Kampala</title>
+  <meta name="description" content="UNIQUE FASHIONS – Elegant suits, wedding wear, traditional attire and refined men's fashion on Luwuum Street, Kampala, Uganda. Order via WhatsApp.">
+  <meta name="keywords" content="men's fashion Kampala, suits Uganda, wedding suits Kampala, agbada, kaftan, Unique Fashions, Luwuum Street">
+  <meta name="author" content="UNIQUE FASHIONS">
+  <meta property="og:title" content="UNIQUE FASHIONS | Dress with Class. Stand Out with Confidence.">
+  <meta property="og:description" content="Discover elegant suits, refined traditional wear and timeless men's fashion in Kampala.">
+  <meta property="og:image" content="https://res.cloudinary.com/lgjllewt/image/upload/v1791616952/logo.jpg">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://upload-widget.cloudinary.com/global/all.js" type="text/javascript"></script>
+  <style>
+    :root {
+      --black: #0a0a0a;
+      --charcoal: #1a1a1a;
+      --ivory: #f8f5f0;
+      --white: #ffffff;
+      --champagne: #c9a84c;
+      --champagne-light: #e0c878;
+      --champagne-dark: #a88b3a;
+      --gray: #6b6b6b;
+      --light-gray: #e8e4dc;
+      --soft-shadow: 0 8px 30px rgba(0,0,0,0.08);
+      --card-shadow: 0 12px 40px rgba(0,0,0,0.12);
+      --transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+      --success: #25D366;
+      --danger: #e74c3c;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; font-size: 16px; }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: var(--ivory);
+      color: var(--black);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+    img { max-width: 100%; height: auto; display: block; }
+    a { text-decoration: none; color: inherit; }
+    h1, h2, h3, h4 {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 600;
+      line-height: 1.2;
+    }
+    .container {
+      width: 100%;
+      max-width: 1280px;
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* Buttons */
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      padding: 0.95rem 1.9rem;
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      border: none;
+      cursor: pointer;
+      transition: var(--transition);
+      border-radius: 2px;
+    }
+    .btn-primary { background: var(--champagne); color: var(--black); }
+    .btn-primary:hover {
+      background: var(--champagne-light);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(201, 168, 76, 0.35);
+    }
+    .btn-secondary {
+      background: transparent;
+      color: var(--white);
+      border: 1.5px solid var(--white);
+    }
+    .btn-secondary:hover { background: var(--white); color: var(--black); }
+    .btn-whatsapp { background: #25D366; color: white; }
+    .btn-whatsapp:hover {
+      background: #1da851;
+      transform: translateY(-2px);
+      box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
+    }
+    .btn-sm {
+      padding: 0.55rem 1.1rem;
+      font-size: 0.72rem;
+    }
+    .btn-outline-dark {
+      background: transparent;
+      color: var(--black);
+      border: 1.5px solid var(--black);
+    }
+    .btn-outline-dark:hover { background: var(--black); color: var(--white); }
+    .btn-danger { background: var(--danger); color: white; }
+    .btn-danger:hover { background: #c0392b; }
+    .btn-success { background: var(--success); color: white; }
+
+    /* Navigation */
+    .navbar {
+      position: fixed;
+      top: 0; left: 0; width: 100%;
+      z-index: 1000;
+      padding: 1.25rem 0;
+      transition: var(--transition);
+    }
+    .navbar.scrolled {
+      background: rgba(10, 10, 10, 0.97);
+      backdrop-filter: blur(12px);
+      padding: 0.9rem 0;
+      box-shadow: 0 4px 30px rgba(0,0,0,0.2);
+    }
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo { display: flex; align-items: center; gap: 0.75rem; }
+    .logo img { height: 48px; width: auto; object-fit: contain; }
+    .logo-text {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: var(--white);
+      letter-spacing: 0.08em;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 2.2rem;
+      list-style: none;
+    }
+    .nav-links a {
+      color: var(--white);
+      font-size: 0.78rem;
+      font-weight: 500;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      position: relative;
+      transition: var(--transition);
+    }
+    .nav-links a::after {
+      content: '';
+      position: absolute;
+      bottom: -4px; left: 0;
+      width: 0; height: 1px;
+      background: var(--champagne);
+      transition: width 0.3s ease;
+    }
+    .nav-links a:hover::after,
+    .nav-links a.active::after { width: 100%; }
+    .nav-cta { padding: 0.7rem 1.4rem; font-size: 0.72rem; }
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      gap: 5px;
+      cursor: pointer;
+      z-index: 1001;
+    }
+    .hamburger span {
+      display: block;
+      width: 26px; height: 2px;
+      background: var(--white);
+      transition: var(--transition);
+    }
+    .hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+    .hamburger.active span:nth-child(2) { opacity: 0; }
+    .hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
+    /* Mobile Menu */
+    .mobile-menu {
+      position: fixed;
+      top: 0; right: -100%;
+      width: 80%; max-width: 340px;
+      height: 100vh;
+      background: var(--black);
+      z-index: 999;
+      padding: 6rem 2rem 2rem;
+      transition: right 0.4s ease;
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    .mobile-menu.active { right: 0; }
+    .mobile-menu a {
+      color: var(--white);
+      font-size: 1rem;
+      font-weight: 500;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.6rem 0;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+    .mobile-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.6);
+      z-index: 998;
+      opacity: 0;
+      visibility: hidden;
+      transition: var(--transition);
+    }
+    .mobile-overlay.active { opacity: 1; visibility: visible; }
+
+    /* Hero */
+    .hero {
+      position: relative;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--black);
+      overflow: hidden;
+    }
+    .hero-bg {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(135deg, rgba(10,10,10,0.75) 0%, rgba(10,10,10,0.55) 50%, rgba(10,10,10,0.7) 100%),
+                  url('https://res.cloudinary.com/lgjllewt/image/upload/v1791617626/wed.jpg') center/cover no-repeat;
+      transform: scale(1.05);
+      transition: transform 8s ease;
+    }
+    .hero:hover .hero-bg { transform: scale(1); }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      max-width: 900px;
+      padding: 2rem 1.5rem;
+    }
+    .hero-eyebrow {
+      font-size: 0.8rem;
+      font-weight: 500;
+      letter-spacing: 0.25em;
+      text-transform: uppercase;
+      color: var(--champagne);
+      margin-bottom: 1.5rem;
+      opacity: 0;
+      animation: fadeUp 0.8s ease 0.2s forwards;
+    }
+    .hero h1 {
+      font-size: clamp(2.6rem, 7vw, 4.8rem);
+      color: var(--white);
+      margin-bottom: 1.5rem;
+      letter-spacing: 0.02em;
+      opacity: 0;
+      animation: fadeUp 0.8s ease 0.4s forwards;
+    }
+    .hero p {
+      font-size: clamp(0.95rem, 2vw, 1.15rem);
+      color: rgba(255,255,255,0.85);
+      max-width: 620px;
+      margin: 0 auto 2.5rem;
+      font-weight: 300;
+      line-height: 1.7;
+      opacity: 0;
+      animation: fadeUp 0.8s ease 0.6s forwards;
+    }
+    .hero-btns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+      opacity: 0;
+      animation: fadeUp 0.8s ease 0.8s forwards;
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Sections */
+    section { padding: 6rem 0; }
+    .section-header { text-align: center; margin-bottom: 3.5rem; }
+    .section-eyebrow {
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--champagne-dark);
+      margin-bottom: 0.8rem;
+    }
+    .section-header h2 {
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      color: var(--black);
+      margin-bottom: 1rem;
+    }
+    .section-header p {
+      font-size: 1rem;
+      color: var(--gray);
+      max-width: 560px;
+      margin: 0 auto;
+      font-weight: 300;
+    }
+
+    /* Collections */
+    .collections { background: var(--white); }
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 2rem;
+    }
+    .product-card {
+      background: var(--ivory);
+      border-radius: 4px;
+      overflow: hidden;
+      transition: var(--transition);
+      box-shadow: var(--soft-shadow);
+      position: relative;
+    }
+    .product-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--card-shadow);
+    }
+    .product-image {
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 3/4;
+      background: var(--light-gray);
+    }
+    .product-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.7s ease;
+    }
+    .product-card:hover .product-image img { transform: scale(1.06); }
+    .product-labels {
+      position: absolute;
+      top: 12px;
+      left: 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      z-index: 2;
+    }
+    .product-label {
+      display: inline-block;
+      padding: 0.3rem 0.7rem;
+      font-size: 0.65rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      background: var(--black);
+      color: var(--white);
+      border-radius: 2px;
+    }
+    .product-label.discount { background: var(--danger); }
+    .product-label.stock { background: var(--success); }
+    .product-label.custom { background: var(--champagne-dark); color: var(--white); }
+    .product-info {
+      padding: 1.5rem 1.4rem 1.6rem;
+      text-align: center;
+    }
+    .product-info h3 {
+      font-size: 1.45rem;
+      margin-bottom: 0.4rem;
+      color: var(--black);
+    }
+    .product-price {
+      font-size: 0.95rem;
+      color: var(--champagne-dark);
+      font-weight: 600;
+      margin-bottom: 1.2rem;
+      letter-spacing: 0.03em;
+    }
+    .product-price .original {
+      text-decoration: line-through;
+      color: var(--gray);
+      font-weight: 400;
+      font-size: 0.85rem;
+      margin-right: 0.5rem;
+    }
+    .product-price span.from {
+      font-size: 0.8rem;
+      color: var(--gray);
+      font-weight: 400;
+    }
+
+    /* Why Choose */
+    .why-choose { background: var(--ivory); }
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 2rem;
+    }
+    .feature-card {
+      background: var(--white);
+      padding: 2.2rem 1.8rem;
+      text-align: center;
+      border-radius: 4px;
+      box-shadow: var(--soft-shadow);
+      transition: var(--transition);
+      border: 1px solid transparent;
+    }
+    .feature-card:hover {
+      border-color: var(--champagne);
+      transform: translateY(-4px);
+    }
+    .feature-icon {
+      width: 56px; height: 56px;
+      margin: 0 auto 1.3rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, var(--champagne), var(--champagne-light));
+      border-radius: 50%;
+      color: var(--black);
+    }
+    .feature-card h3 { font-size: 1.3rem; margin-bottom: 0.6rem; }
+    .feature-card p {
+      font-size: 0.9rem;
+      color: var(--gray);
+      font-weight: 300;
+      line-height: 1.65;
+    }
+
+    /* Occasions */
+    .occasions { background: var(--charcoal); color: var(--white); }
+    .occasions .section-eyebrow { color: var(--champagne); }
+    .occasions .section-header h2 { color: var(--white); }
+    .occasions .section-header p { color: rgba(255,255,255,0.7); }
+    .occasions-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
+    .occasion-card {
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      padding: 2rem 1.5rem;
+      text-align: center;
+      border-radius: 4px;
+      transition: var(--transition);
+    }
+    .occasion-card:hover {
+      background: rgba(201, 168, 76, 0.1);
+      border-color: var(--champagne);
+    }
+    .occasion-card h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.5rem;
+      color: var(--champagne-light);
+    }
+    .occasion-card p {
+      font-size: 0.88rem;
+      color: rgba(255,255,255,0.65);
+      font-weight: 300;
+    }
+    .occasions-cta { text-align: center; margin-top: 3rem; }
+
+    /* CTA */
+    .cta-section {
+      background: linear-gradient(135deg, #0a0a0a 0%, #1a1a1a 100%);
+      padding: 7rem 0;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .cta-section::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 50%;
+      transform: translateX(-50%);
+      width: 1px; height: 60px;
+      background: var(--champagne);
+    }
+    .cta-section h2 {
+      font-size: clamp(2.2rem, 5vw, 3.5rem);
+      color: var(--white);
+      margin-bottom: 1.2rem;
+    }
+    .cta-section p {
+      font-size: 1.05rem;
+      color: rgba(255,255,255,0.7);
+      max-width: 520px;
+      margin: 0 auto 2.5rem;
+      font-weight: 300;
+    }
+    .cta-btns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      justify-content: center;
+    }
+
+    /* Contact */
+    .contact { background: var(--white); }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 3rem;
+      align-items: center;
+    }
+    .contact-info h2 { font-size: 2.4rem; margin-bottom: 1.5rem; }
+    .contact-details {
+      display: flex;
+      flex-direction: column;
+      gap: 1.2rem;
+      margin-bottom: 2rem;
+    }
+    .contact-item { display: flex; align-items: flex-start; gap: 1rem; }
+    .contact-item .icon {
+      width: 42px; height: 42px;
+      background: var(--ivory);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      color: var(--champagne-dark);
+    }
+    .contact-item h4 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--gray);
+      margin-bottom: 0.2rem;
+    }
+    .contact-item p, .contact-item a {
+      font-size: 1rem;
+      color: var(--black);
+      font-weight: 500;
+    }
+    .contact-item a:hover { color: var(--champagne-dark); }
+    .contact-map {
+      background: var(--light-gray);
+      border-radius: 4px;
+      overflow: hidden;
+      aspect-ratio: 4/3;
+    }
+    .contact-map iframe { width: 100%; height: 100%; border: 0; }
+
+    /* Footer */
+    footer {
+      background: var(--black);
+      color: var(--white);
+      padding: 4rem 0 2rem;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1fr;
+      gap: 2.5rem;
+      margin-bottom: 3rem;
+    }
+    .footer-brand .logo img { height: 52px; margin-bottom: 1rem; }
+    .footer-brand p {
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.6);
+      font-weight: 300;
+      line-height: 1.7;
+      margin-top: 0.8rem;
+    }
+    .footer-col h4 {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--champagne);
+      margin-bottom: 1.3rem;
+    }
+    .footer-col ul {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.7rem;
+    }
+    .footer-col a {
+      font-size: 0.9rem;
+      color: rgba(255,255,255,0.65);
+      transition: color 0.3s;
+    }
+    .footer-col a:hover { color: var(--champagne-light); }
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.08);
+      padding-top: 1.8rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .footer-bottom p {
+      font-size: 0.85rem;
+      color: rgba(255,255,255,0.45);
+    }
+    .admin-link {
+      font-size: 0.65rem;
+      color: rgba(255,255,255,0.18);
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: color 0.3s;
+      user-select: none;
+    }
+    .admin-link:hover { color: rgba(255,255,255,0.4); }
+
+    /* Floating WhatsApp */
+    .float-whatsapp {
+      position: fixed;
+      bottom: 1.8rem;
+      right: 1.8rem;
+      z-index: 900;
+      width: 60px; height: 60px;
+      background: #25D366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 6px 25px rgba(37, 211, 102, 0.4);
+      transition: var(--transition);
+      animation: pulse 2.5s infinite;
+    }
+    .float-whatsapp:hover {
+      transform: scale(1.1);
+      box-shadow: 0 8px 30px rgba(37, 211, 102, 0.5);
+    }
+    .float-whatsapp svg { width: 32px; height: 32px; fill: white; }
+    @keyframes pulse {
+      0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5); }
+      70% { box-shadow: 0 0 0 15px rgba(37, 211, 102, 0); }
+      100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+    }
+
+    /* Reveal */
+    .reveal {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+
+    /* ========== ADMIN DASHBOARD ========== */
+    .admin-modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.75);
+      z-index: 2000;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+    }
+    .admin-modal-overlay.active { display: flex; }
+    .admin-login-box {
+      background: var(--white);
+      padding: 2.5rem 2rem;
+      border-radius: 8px;
+      width: 100%;
+      max-width: 380px;
+      text-align: center;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    }
+    .admin-login-box h3 {
+      font-size: 1.6rem;
+      margin-bottom: 0.5rem;
+    }
+    .admin-login-box p {
+      font-size: 0.9rem;
+      color: var(--gray);
+      margin-bottom: 1.8rem;
+    }
+    .admin-login-box input {
+      width: 100%;
+      padding: 0.9rem 1rem;
+      border: 1.5px solid var(--light-gray);
+      border-radius: 4px;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+      font-family: inherit;
+      outline: none;
+      transition: border-color 0.3s;
+    }
+    .admin-login-box input:focus { border-color: var(--champagne); }
+    .admin-login-box .error {
+      color: var(--danger);
+      font-size: 0.85rem;
+      margin-bottom: 1rem;
+      display: none;
+    }
+    .admin-login-box .btn { width: 100%; }
+
+    /* Dashboard panel */
+    .admin-dashboard {
+      position: fixed;
+      inset: 0;
+      background: #f4f2ed;
+      z-index: 2000;
+      display: none;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    .admin-dashboard.active { display: flex; }
+    .admin-header {
+      background: var(--black);
+      color: var(--white);
+      padding: 1rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-shrink: 0;
+    }
+    .admin-header h2 {
+      font-size: 1.4rem;
+      color: var(--white);
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+    .admin-header-actions { display: flex; gap: 0.8rem; align-items: center; }
+    .admin-body {
+      flex: 1;
+      overflow-y: auto;
+      padding: 1.5rem;
+    }
+    .admin-toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 1.5rem;
+    }
+    .admin-toolbar h3 {
+      font-size: 1.3rem;
+      color: var(--black);
+    }
+    .admin-products-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.25rem;
+    }
+    .admin-product-card {
+      background: var(--white);
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: var(--soft-shadow);
+      display: flex;
+      flex-direction: column;
+    }
+    .admin-product-card .img-wrap {
+      position: relative;
+      aspect-ratio: 4/3;
+      background: var(--light-gray);
+      overflow: hidden;
+    }
+    .admin-product-card .img-wrap img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .admin-product-card .card-body {
+      padding: 1rem 1.1rem 1.2rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .admin-product-card h4 {
+      font-size: 1.15rem;
+      margin-bottom: 0.3rem;
+    }
+    .admin-product-card .price-row {
+      font-size: 0.9rem;
+      color: var(--champagne-dark);
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    .admin-product-card .labels-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+      margin-bottom: 0.8rem;
+      min-height: 22px;
+    }
+    .admin-product-card .labels-row span {
+      font-size: 0.65rem;
+      padding: 0.2rem 0.5rem;
+      background: var(--light-gray);
+      border-radius: 2px;
+      color: var(--black);
+    }
+    .admin-product-card .actions {
+      display: flex;
+      gap: 0.5rem;
+      margin-top: auto;
+    }
+    .admin-product-card .actions .btn { flex: 1; }
+
+    /* Edit / Add form modal */
+    .form-modal-overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.6);
+      z-index: 2100;
+      display: none;
+      align-items: flex-start;
+      justify-content: center;
+      padding: 2rem 1rem;
+      overflow-y: auto;
+    }
+    .form-modal-overlay.active { display: flex; }
+    .form-modal {
+      background: var(--white);
+      border-radius: 10px;
+      width: 100%;
+      max-width: 520px;
+      margin: auto;
+      box-shadow: 0 25px 60px rgba(0,0,0,0.25);
+      overflow: hidden;
+    }
+    .form-modal-header {
+      background: var(--black);
+      color: var(--white);
+      padding: 1.1rem 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .form-modal-header h3 { font-size: 1.25rem; color: var(--white); }
+    .form-modal-header button {
+      background: none;
+      border: none;
+      color: var(--white);
+      font-size: 1.5rem;
+      cursor: pointer;
+      line-height: 1;
+      opacity: 0.7;
+    }
+    .form-modal-header button:hover { opacity: 1; }
+    .form-modal-body { padding: 1.5rem; }
+    .form-group { margin-bottom: 1.2rem; }
+    .form-group label {
+      display: block;
+      font-size: 0.78rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--gray);
+      margin-bottom: 0.4rem;
+    }
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 0.75rem 0.9rem;
+      border: 1.5px solid var(--light-gray);
+      border-radius: 4px;
+      font-size: 0.95rem;
+      font-family: inherit;
+      outline: none;
+      transition: border-color 0.3s;
+    }
+    .form-group input:focus,
+    .form-group textarea:focus { border-color: var(--champagne); }
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+    }
+    .image-preview {
+      width: 100%;
+      aspect-ratio: 3/4;
+      max-height: 220px;
+      object-fit: cover;
+      border-radius: 4px;
+      background: var(--light-gray);
+      margin-bottom: 0.8rem;
+    }
+    .image-actions {
+      display: flex;
+      gap: 0.6rem;
+      flex-wrap: wrap;
+    }
+    .labels-input-area {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+      margin-bottom: 0.6rem;
+      min-height: 32px;
+    }
+    .label-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.3rem 0.6rem;
+      background: var(--ivory);
+      border: 1px solid var(--light-gray);
+      border-radius: 20px;
+      font-size: 0.8rem;
+    }
+    .label-chip button {
+      background: none;
+      border: none;
+      color: var(--gray);
+      cursor: pointer;
+      font-size: 0.9rem;
+      line-height: 1;
+      padding: 0;
+    }
+    .label-chip button:hover { color: var(--danger); }
+    .add-label-row {
+      display: flex;
+      gap: 0.5rem;
+    }
+    .add-label-row input { flex: 1; }
+    .form-modal-footer {
+      padding: 1rem 1.5rem 1.5rem;
+      display: flex;
+      gap: 0.8rem;
+      justify-content: flex-end;
+    }
+    .empty-state {
+      text-align: center;
+      padding: 3rem 1rem;
+      color: var(--gray);
+    }
+    .empty-state p { margin-bottom: 1.2rem; }
+
+    /* Toast */
+    .toast {
+      position: fixed;
+      bottom: 2rem;
+      left: 50%;
+      transform: translateX(-50%) translateY(100px);
+      background: var(--black);
+      color: var(--white);
+      padding: 0.9rem 1.5rem;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      z-index: 3000;
+      opacity: 0;
+      transition: all 0.35s ease;
+      pointer-events: none;
+    }
+    .toast.show {
+      transform: translateX(-50%) translateY(0);
+      opacity: 1;
+    }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .contact-grid { grid-template-columns: 1fr; }
+    }
+    @media (max-width: 768px) {
+      .nav-links { display: none; }
+      .hamburger { display: flex; }
+      section { padding: 4.5rem 0; }
+      .products-grid {
+        grid-template-columns: 1fr;
+        max-width: 400px;
+        margin: 0 auto;
+      }
+      .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+      .hero-btns { flex-direction: column; align-items: center; }
+      .hero-btns .btn { width: 100%; max-width: 280px; }
+      .cta-btns { flex-direction: column; align-items: center; }
+      .cta-btns .btn { width: 100%; max-width: 280px; }
+      .logo-text { font-size: 1.15rem; }
+      .logo img { height: 40px; }
+      .form-row { grid-template-columns: 1fr; }
+      .admin-header h2 { font-size: 1.15rem; }
+    }
+    @media (max-width: 480px) {
+      .container { padding: 0 1.2rem; }
+      .product-info { padding: 1.3rem 1.1rem 1.4rem; }
+      .float-whatsapp {
+        width: 54px; height: 54px;
+        bottom: 1.3rem; right: 1.3rem;
+      }
+      .float-whatsapp svg { width: 28px; height: 28px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">
+        <img src="https://res.cloudinary.com/lgjllewt/image/upload/v1791616952/logo.jpg" alt="UNIQUE FASHIONS Logo">
+        <span class="logo-text">UNIQUE FASHIONS</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#collections">Collections</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <a href="https://wa.me/256758266904?text=Hello%20Unique%20Fashions%2C%20I%27m%20interested%20in%20your%20fashion%20collection.%20Please%20share%20more%20details." 
+             class="btn btn-primary nav-cta" target="_blank" rel="noopener">ORDER ON WHATSAPP</a>
+        </li>
+      </ul>
+      <div class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Menu -->
+  <div class="mobile-overlay" id="mobileOverlay"></div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home">Home</a>
+    <a href="#collections">Collections</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a href="https://wa.me/256758266904?text=Hello%20Unique%20Fashions%2C%20I%27m%20interested%20in%20your%20fashion%20collection.%20Please%20share%20more%20details." 
+       class="btn btn-whatsapp" style="margin-top:1rem;" target="_blank" rel="noopener">ORDER ON WHATSAPP</a>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero" id="home">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Premium Men's Fashion · Kampala</p>
+      <h1>DRESS WITH CLASS.<br>STAND OUT WITH CONFIDENCE.</h1>
+      <p>Discover elegant suits, refined traditional wear, and timeless men's fashion designed to make every occasion memorable.</p>
+      <div class="hero-btns">
+        <a href="#collections" class="btn btn-primary">EXPLORE OUR COLLECTION</a>
+        <a href="https://wa.me/256758266904?text=Hello%20Unique%20Fashions%2C%20I%27m%20interested%20in%20your%20fashion%20collection.%20Please%20share%20more%20details." 
+           class="btn btn-secondary" target="_blank" rel="noopener">ORDER ON WHATSAPP</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Collections -->
+  <section class="collections" id="collections">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Our Collection</p>
+        <h2>Curated for the Modern Gentleman</h2>
+        <p>Explore refined suits, traditional wear and tailored pieces crafted for memorable moments.</p>
+      </div>
+      <div class="products-grid" id="productsGrid">
+        <!-- Products rendered by JS -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose -->
+  <section class="why-choose" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Why Unique Fashions</p>
+        <h2>Style That Speaks for You</h2>
+        <p>Thoughtfully selected pieces for gentlemen who value elegance and presence.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card reveal">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+          </div>
+          <h3>Style for Every Occasion</h3>
+          <p>Explore formal suits and traditional wear for important moments that deserve distinction.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"/><line x1="3" y1="6" x2="21" y2="6"/><path d="M16 10a4 4 0 0 1-8 0"/></svg>
+          </div>
+          <h3>A Collection for Gentlemen</h3>
+          <p>Discover suits, trousers, and refined fashion options curated for the modern man.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+          </div>
+          <h3>Find Your Look</h3>
+          <p>Contact the team to discuss available designs and the options that best suit you.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+          </div>
+          <h3>Personal Assistance</h3>
+          <p>Connect directly with the business through WhatsApp for quick, personal guidance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Occasions -->
+  <section class="occasions">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-eyebrow">Occasions & Style</p>
+        <h2>Dressed for Life’s Defining Moments</h2>
+        <p>From formal ceremonies to cultural celebrations — find the look that fits the occasion.</p>
+      </div>
+      <div class="occasions-grid">
+        <div class="occasion-card reveal">
+          <h3>Weddings & Ceremonies</h3>
+          <p>Make a lasting impression on your special day with refined wedding suits.</p>
+        </div>
+        <div class="occasion-card reveal">
+          <h3>Introduction Ceremonies</h3>
+          <p>Elegant introduction suits designed for memorable family occasions.</p>
+        </div>
+        <div class="occasion-card reveal">
+          <h3>Business & Formal</h3>
+          <p>Sharp, confident looks suited for professional and formal settings.</p>
+        </div>
+        <div class="occasion-card reveal">
+          <h3>Traditional Celebrations</h3>
+          <p>Agbada, kaftan and cultural attire for meaningful celebrations.</p>
+        </div>
+        <div class="occasion-card reveal">
+          <h3>Children’s Formal Wear</h3>
+          <p>Well-crafted kids’ suits for young gentlemen on special occasions.</p>
+        </div>
+      </div>
+      <div class="occasions-cta reveal">
+        <a href="#collections" class="btn btn-primary">FIND YOUR STYLE</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Strong CTA -->
+  <section class="cta-section">
+    <div class="container reveal">
+      <h2>YOUR NEXT LOOK STARTS HERE.</h2>
+      <p>Explore the collection and speak with Unique Fashions directly to find the right style for your next occasion.</p>
+      <div class="cta-btns">
+        <a href="https://wa.me/256758266904?text=Hello%20Unique%20Fashions%2C%20I%27m%20interested%20in%20your%20fashion%20collection.%20Please%20share%20more%20details." 
+           class="btn btn-primary" target="_blank" rel="noopener">ORDER ON WHATSAPP</a>
+        <a href="#collections" class="btn btn-secondary">EXPLORE COLLECTION</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <p class="section-eyebrow">Get in Touch</p>
+          <h2>Visit Us or Reach Out</h2>
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <h4>Location</h4>
+                <p>Luwuum Street, Kampala, Uganda</p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              </div>
+              <div>
+                <h4>WhatsApp / Phone</h4>
+                <p><a href="tel:+256758266904">0758 266 904</a></p>
+                <p style="margin-top:0.3rem"><a href="tel:+256764728396">0764 728 396</a> <span style="font-size:0.85rem;color:var(--gray)">(Alternative)</span></p>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+              </div>
+              <div>
+                <h4>Business</h4>
+                <p>UNIQUE FASHIONS</p>
+              </div>
+            </div>
+          </div>
+          <a href="https://wa.me/256758266904?text=Hello%20Unique%20Fashions%2C%20I%27m%20interested%20in%20your%20fashion%20collection.%20Please%20share%20more%20details." 
+             class="btn btn-whatsapp" target="_blank" rel="noopener">CHAT ON WHATSAPP</a>
+        </div>
+        <div class="contact-map reveal">
+          <iframe 
+            src="https://maps.google.com/maps?q=Luwum+Street,+Kampala,+Uganda&t=&z=16&ie=UTF8&iwloc=&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Luwum Street, Kampala Map"
+            allowfullscreen>
+          </iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#home" class="logo">
+            <img src="https://res.cloudinary.com/lgjllewt/image/upload/v1791616952/logo.jpg" alt="UNIQUE FASHIONS">
+          </a>
+          <p>Premium men's fashion on Luwuum Street, Kampala. Elegant suits, traditional wear and refined style for every occasion.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Navigate</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#collections">Collections</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Collections</h4>
+          <ul>
+            <li><a href="#collections">Suits</a></li>
+            <li><a href="#collections">Wedding Wear</a></li>
+            <li><a href="#collections">Traditional</a></li>
+            <li><a href="#collections">Trousers</a></li>
+            <li><a href="#collections">Kids' Suits</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li><a href="https://wa.me/256758266904" target="_blank" rel="noopener">WhatsApp: 0758 266 904</a></li>
+            <li><a href="https://wa.me/256764728396" target="_blank" rel="noopener">Alt: 0764 728 396</a></li>
+            <li><a href="tel:+256758266904">Call: 0758 266 904</a></li>
+            <li>Luwuum Street, Kampala</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 UNIQUE FASHIONS. All rights reserved.</p>
+        <p>
+          Luwuum Street, Kampala, Uganda
+          <span class="admin-link" id="adminTrigger" title=""> · admin</span>
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/256758266904?text=Hello%20Unique%20Fashions%2C%20I%27m%20interested%20in%20your%20fashion%20collection.%20Please%20share%20more%20details." 
+     class="float-whatsapp" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+    <svg viewBox="0 0 32 32"><path d="M16.004 0C7.174 0 0 7.176 0 16.004c0 2.824.74 5.572 2.144 7.992L0 32l8.208-2.152A15.93 15.93 0 0016.004 32C24.826 32 32 24.824 32 16.004 32 7.176 24.826 0 16.004 0zm9.36 22.6c-.388 1.1-1.928 2.012-3.16 2.276-.84.18-1.936.324-5.636-1.208-4.732-1.96-7.776-6.76-8.012-7.072-.228-.316-1.9-2.532-1.9-4.832 0-2.3 1.204-3.432 1.632-3.9.388-.428.848-.536 1.132-.536.284 0 .576.004.828.016.264.012.62-.1.968.74.36.86 1.224 2.98 1.332 3.196.108.216.18.472.036.76-.14.284-.212.46-.42.708-.208.248-.436.552-.624.74-.208.216-.424.452-.182.888.24.436 1.072 1.768 2.3 2.864 1.58 1.412 2.912 1.852 3.328 2.06.416.208.66.176.904-.108.248-.284 1.048-1.224 1.328-1.644.28-.42.56-.348.948-.208.388.14 2.46 1.16 2.88 1.372.42.216.7.32.804.5.104.18.104 1.044-.284 2.144z"/></svg>
+  </a>
+
+  <!-- Admin Login Modal -->
+  <div class="admin-modal-overlay" id="adminLoginOverlay">
+    <div class="admin-login-box">
+      <h3>Admin Access</h3>
+      <p>Enter the password to manage products</p>
+      <div class="error" id="loginError">Incorrect password. Please try again.</div>
+      <input type="password" id="adminPassword" placeholder="Password" autocomplete="off">
+      <button class="btn btn-primary" id="loginBtn">Enter Dashboard</button>
+      <button class="btn btn-outline-dark" style="margin-top:0.6rem;width:100%;" id="cancelLoginBtn">Cancel</button>
+    </div>
+  </div>
+
+  <!-- Admin Dashboard -->
+  <div class="admin-dashboard" id="adminDashboard">
+    <div class="admin-header">
+      <h2>
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+        Product Dashboard
+      </h2>
+      <div class="admin-header-actions">
+        <button class="btn btn-sm btn-primary" id="addProductBtn">+ Add Product</button>
+        <button class="btn btn-sm btn-outline-dark" style="border-color:rgba(255,255,255,0.4);color:white;" id="logoutBtn">Logout</button>
+      </div>
+    </div>
+    <div class="admin-body">
+      <div class="admin-toolbar">
+        <h3>Your Products <span id="productCount" style="font-weight:400;color:var(--gray);font-size:0.95rem;"></span></h3>
+        <p style="font-size:0.85rem;color:var(--gray);">Changes save automatically to this browser.</p>
+      </div>
+      <div class="admin-products-list" id="adminProductsList">
+        <!-- Admin cards rendered by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Product Form Modal -->
+  <div class="form-modal-overlay" id="formModalOverlay">
+    <div class="form-modal">
+      <div class="form-modal-header">
+        <h3 id="formTitle">Edit Product</h3>
+        <button type="button" id="closeFormBtn" aria-label="Close">&times;</button>
+      </div>
+      <div class="form-modal-body">
+        <input type="hidden" id="editProductId">
+        <div class="form-group">
+          <label>Product Photo</label>
+          <img id="imagePreview" class="image-preview" src="" alt="Preview" style="display:none;">
+          <div class="image-actions">
+            <button type="button" class="btn btn-sm btn-primary" id="uploadImageBtn">Upload New Photo</button>
+            <button type="button" class="btn btn-sm btn-outline-dark" id="removeImageBtn" style="display:none;">Remove Photo</button>
+          </div>
+          <input type="hidden" id="productImageUrl">
+        </div>
+        <div class="form-group">
+          <label>Product Name</label>
+          <input type="text" id="productName" placeholder="e.g. Wedding Suits" required>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label>Current Price (UGX)</label>
+            <input type="number" id="productPrice" placeholder="350000" min="0" step="1000">
+          </div>
+          <div class="form-group">
+            <label>Original Price (optional)</label>
+            <input type="number" id="productOriginalPrice" placeholder="For strike-through" min="0" step="1000">
+          </div>
+        </div>
+        <div class="form-group">
+          <label>Button Text (CTA)</label>
+          <input type="text" id="productCta" placeholder="ORDER THIS SUIT">
+        </div>
+        <div class="form-group">
+          <label>Labels (custom — e.g. In Stock, 20% Off, New)</label>
+          <div class="labels-input-area" id="labelsArea"></div>
+          <div class="add-label-row">
+            <input type="text" id="newLabelInput" placeholder="Type a label and add">
+            <button type="button" class="btn btn-sm btn-outline-dark" id="addLabelBtn">Add</button>
+          </div>
+        </div>
+      </div>
+      <div class="form-modal-footer">
+        <button type="button" class="btn btn-outline-dark" id="cancelFormBtn">Cancel</button>
+        <button type="button" class="btn btn-primary" id="saveProductBtn">Save Product</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast -->
+  <div class="toast" id="toast"></div>
+
+  <script>
+    // ========== CONFIG ==========
+    const ADMIN_PASSWORD = 'UfAdmin2026KpX9';
+    const CLOUD_NAME = 'lgjllewt';
+    const UPLOAD_PRESET = 'frecary';
+    const WA_NUMBER = '256758266904';
+    const STORAGE_KEY = 'unique_fashions_products';
+
+    // Default products
+    const DEFAULT_PRODUCTS = [
+      {
+        id: 'p1',
+        name: 'Double-Breasted Suits',
+        price: 350000,
+        originalPrice: null,
+        image: 'https://res.cloudinary.com/lgjllewt/image/upload/v1791617155/fullsuit.jpg',
+        cta: 'ORDER THIS SUIT',
+        labels: []
+      },
+      {
+        id: 'p2',
+        name: 'Wedding Suits',
+        price: 500000,
+        originalPrice: null,
+        image: 'https://res.cloudinary.com/lgjllewt/image/upload/v1791617626/wed.jpg',
+        cta: 'ORDER THIS SUIT',
+        labels: []
+      },
+      {
+        id: 'p3',
+        name: 'Introduction Suits',
+        price: 450000,
+        originalPrice: null,
+        image: 'https://res.cloudinary.com/lgjllewt/image/upload/v1791617664/intro.jpg',
+        cta: 'ORDER THIS SUIT',
+        labels: []
+      },
+      {
+        id: 'p4',
+        name: "Kids' Suits",
+        price: 200000,
+        originalPrice: null,
+        image: 'https://res.cloudinary.com/lgjllewt/image/upload/v1791617076/kidsuit.jpg',
+        cta: 'ORDER THIS SUIT',
+        labels: []
+      },
+      {
+        id: 'p5',
+        name: "Gentlemen's Trousers",
+        price: 80000,
+        originalPrice: null,
+        image: 'https://res.cloudinary.com/lgjllewt/image/upload/v1791617001/gentletrousers.jpg',
+        cta: 'ORDER TROUSERS',
+        labels: []
+      },
+      {
+        id: 'p6',
+        name: 'Agbada',
+        price: 500000,
+        originalPrice: null,
+        image: 'https://res.cloudinary.com/lgjllewt/image/upload/v1791617038/agbada.jpg',
+        cta: 'ORDER AGBADA',
+        labels: []
+      },
+      {
+        id: 'p7',
+        name: 'Kaftan',
+        price: 200000,
+        originalPrice: null,
+        image: 'https://res.cloudinary.com/lgjllewt/image/upload/v1791617100/kaftan.jpg',
+        cta: 'ORDER KAFTAN',
+        labels: []
+      }
+    ];
+
+    // ========== STATE ==========
+    let products = [];
+    let editingLabels = [];
+    let currentEditId = null;
+
+    // ========== STORAGE ==========
+    function loadProducts() {
+      try {
+        const saved = localStorage.getItem(STORAGE_KEY);
+        if (saved) {
+          products = JSON.parse(saved);
+        } else {
+          products = JSON.parse(JSON.stringify(DEFAULT_PRODUCTS));
+          saveProducts();
+        }
+      } catch (e) {
+        products = JSON.parse(JSON.stringify(DEFAULT_PRODUCTS));
+      }
+    }
+
+    function saveProducts() {
+      localStorage.setItem(STORAGE_KEY, JSON.stringify(products));
+    }
+
+    // ========== HELPERS ==========
+    function formatPrice(n) {
+      if (!n && n !== 0) return '';
+      return 'UGX ' + Number(n).toLocaleString('en-US');
+    }
+
+    function buildWaLink(product) {
+      const priceStr = formatPrice(product.price);
+      const msg = `Hello Unique Fashions, I'm interested in the ${product.name} starting from ${priceStr}. Please share available designs, sizes, and ordering details.`;
+      return `https://wa.me/${WA_NUMBER}?text=${encodeURIComponent(msg)}`;
+    }
+
+    function showToast(msg) {
+      const t = document.getElementById('toast');
+      t.textContent = msg;
+      t.classList.add('show');
+      setTimeout(() => t.classList.remove('show'), 2800);
+    }
+
+    function generateId() {
+      return 'p' + Date.now().toString(36) + Math.random().toString(36).slice(2, 6);
+    }
+
+    // ========== RENDER FRONTEND PRODUCTS ==========
+    function renderProducts() {
+      const grid = document.getElementById('productsGrid');
+      if (!products.length) {
+        grid.innerHTML = '<p style="text-align:center;grid-column:1/-1;color:var(--gray);padding:2rem;">No products available at the moment.</p>';
+        return;
+      }
+      grid.innerHTML = products.map(p => {
+        const labelsHtml = (p.labels || []).map(l => {
+          const lower = l.toLowerCase();
+          let cls = 'custom';
+          if (lower.includes('stock') || lower.includes('available')) cls = 'stock';
+          if (lower.includes('%') || lower.includes('off') || lower.includes('sale') || lower.includes('discount')) cls = 'discount';
+          return `<span class="product-label ${cls}">${escapeHtml(l)}</span>`;
+        }).join('');
+
+        const priceHtml = p.originalPrice && p.originalPrice > p.price
+          ? `<span class="original">${formatPrice(p.originalPrice)}</span>${formatPrice(p.price)}`
+          : `<span class="from">Starting from</span> ${formatPrice(p.price)}`;
+
+        return `
+          <article class="product-card reveal">
+            <div class="product-image">
+              ${labelsHtml ? `<div class="product-labels">${labelsHtml}</div>` : ''}
+              <img src="${p.image || ''}" alt="${escapeHtml(p.name)} by UNIQUE FASHIONS" loading="lazy"
+                   onerror="this.src='https://res.cloudinary.com/lgjllewt/image/upload/v1791616952/logo.jpg'">
+            </div>
+            <div class="product-info">
+              <h3>${escapeHtml(p.name)}</h3>
+              <p class="product-price">${priceHtml}</p>
+              <a href="${buildWaLink(p)}" class="btn btn-whatsapp" target="_blank" rel="noopener">${escapeHtml(p.cta || 'ORDER NOW')}</a>
+            </div>
+          </article>
+        `;
+      }).join('');
+
+      // Re-observe reveals
+      document.querySelectorAll('#productsGrid .reveal').forEach(el => {
+        revealObserver.observe(el);
+      });
+    }
+
+    function escapeHtml(str) {
+      if (!str) return '';
+      return String(str)
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;');
+    }
+
+    // ========== ADMIN RENDER ==========
+    function renderAdminList() {
+      const list = document.getElementById('adminProductsList');
+      document.getElementById('productCount').textContent = `(${products.length})`;
+
+      if (!products.length) {
+        list.innerHTML = `
+          <div class="empty-state" style="grid-column:1/-1;">
+            <p>No products yet. Add your first product to get started.</p>
+            <button class="btn btn-primary" onclick="document.getElementById('addProductBtn').click()">+ Add Product</button>
+          </div>`;
+        return;
+      }
+
+      list.innerHTML = products.map(p => `
+        <div class="admin-product-card">
+          <div class="img-wrap">
+            <img src="${p.image || ''}" alt="${escapeHtml(p.name)}" onerror="this.src='https://res.cloudinary.com/lgjllewt/image/upload/v1791616952/logo.jpg'">
+          </div>
+          <div class="card-body">
+            <h4>${escapeHtml(p.name)}</h4>
+            <div class="price-row">
+              ${p.originalPrice && p.originalPrice > p.price
+                ? `<span style="text-decoration:line-through;color:var(--gray);font-weight:400;margin-right:6px;">${formatPrice(p.originalPrice)}</span>`
+                : ''}
+              ${formatPrice(p.price)}
+            </div>
+            <div class="labels-row">
+              ${(p.labels || []).map(l => `<span>${escapeHtml(l)}</span>`).join('') || '<span style="opacity:0.5;">No labels</span>'}
+            </div>
+            <div class="actions">
+              <button class="btn btn-sm btn-outline-dark" onclick="openEditForm('${p.id}')">Edit</button>
+              <button class="btn btn-sm btn-danger" onclick="deleteProduct('${p.id}')">Delete</button>
+            </div>
+          </div>
+        </div>
+      `).join('');
+    }
+
+    // ========== FORM ==========
+    function openAddForm() {
+      currentEditId = null;
+      document.getElementById('formTitle').textContent = 'Add New Product';
+      document.getElementById('editProductId').value = '';
+      document.getElementById('productName').value = '';
+      document.getElementById('productPrice').value = '';
+      document.getElementById('productOriginalPrice').value = '';
+      document.getElementById('productCta').value = 'ORDER THIS SUIT';
+      document.getElementById('productImageUrl').value = '';
+      document.getElementById('imagePreview').style.display = 'none';
+      document.getElementById('imagePreview').src = '';
+      document.getElementById('removeImageBtn').style.display = 'none';
+      editingLabels = [];
+      renderLabelsArea();
+      document.getElementById('formModalOverlay').classList.add('active');
+    }
+
+    function openEditForm(id) {
+      const p = products.find(x => x.id === id);
+      if (!p) return;
+      currentEditId = id;
+      document.getElementById('formTitle').textContent = 'Edit Product';
+      document.getElementById('editProductId').value = id;
+      document.getElementById('productName').value = p.name || '';
+      document.getElementById('productPrice').value = p.price || '';
+      document.getElementById('productOriginalPrice').value = p.originalPrice || '';
+      document.getElementById('productCta').value = p.cta || 'ORDER THIS SUIT';
+      document.getElementById('productImageUrl').value = p.image || '';
+      if (p.image) {
+        document.getElementById('imagePreview').src = p.image;
+        document.getElementById('imagePreview').style.display = 'block';
+        document.getElementById('removeImageBtn').style.display = 'inline-flex';
+      } else {
+        document.getElementById('imagePreview').style.display = 'none';
+        document.getElementById('removeImageBtn').style.display = 'none';
+      }
+      editingLabels = [...(p.labels || [])];
+      renderLabelsArea();
+      document.getElementById('formModalOverlay').classList.add('active');
+    }
+
+    function closeForm() {
+      document.getElementById('formModalOverlay').classList.remove('active');
+    }
+
+    function renderLabelsArea() {
+      const area = document.getElementById('labelsArea');
+      area.innerHTML = editingLabels.map((l, i) => `
+        <span class="label-chip">
+          ${escapeHtml(l)}
+          <button type="button" onclick="removeLabel(${i})" aria-label="Remove">&times;</button>
+        </span>
+      `).join('');
+    }
+
+    function removeLabel(index) {
+      editingLabels.splice(index, 1);
+      renderLabelsArea();
+    }
+
+    function addLabel() {
+      const input = document.getElementById('newLabelInput');
+      const val = input.value.trim();
+      if (!val) return;
+      if (editingLabels.includes(val)) {
+        showToast('Label already added');
+        return;
+      }
+      editingLabels.push(val);
+      input.value = '';
+      renderLabelsArea();
+    }
+
+    function saveProduct() {
+      const name = document.getElementById('productName').value.trim();
+      const price = parseInt(document.getElementById('productPrice').value, 10);
+      const originalPriceVal = document.getElementById('productOriginalPrice').value;
+      const originalPrice = originalPriceVal ? parseInt(originalPriceVal, 10) : null;
+      const cta = document.getElementById('productCta').value.trim() || 'ORDER NOW';
+      const image = document.getElementById('productImageUrl').value.trim();
+
+      if (!name) {
+        showToast('Please enter a product name');
+        return;
+      }
+      if (!price || price < 0) {
+        showToast('Please enter a valid price');
+        return;
+      }
+
+      const data = {
+        name,
+        price,
+        originalPrice: originalPrice && originalPrice > 0 ? originalPrice : null,
+        image: image || '',
+        cta,
+        labels: [...editingLabels]
+      };
+
+      if (currentEditId) {
+        const idx = products.findIndex(p => p.id === currentEditId);
+        if (idx !== -1) {
+          products[idx] = { ...products[idx], ...data };
+          showToast('Product updated');
+        }
+      } else {
+        products.push({ id: generateId(), ...data });
+        showToast('Product added');
+      }
+
+      saveProducts();
+      renderProducts();
+      renderAdminList();
+      closeForm();
+    }
+
+    function deleteProduct(id) {
+      if (!confirm('Delete this product? This cannot be undone.')) return;
+      products = products.filter(p => p.id !== id);
+      saveProducts();
+      renderProducts();
+      renderAdminList();
+      showToast('Product deleted');
+    }
+
+    // ========== CLOUDINARY ==========
+    function openCloudinaryUpload() {
+      if (typeof cloudinary === 'undefined') {
+        showToast('Upload widget loading… try again in a moment');
+        return;
+      }
+      const widget = cloudinary.createUploadWidget({
+        cloudName: CLOUD_NAME,
+        uploadPreset: UPLOAD_PRESET,
+        sources: ['local', 'camera', 'url'],
+        multiple: false,
+        maxFiles: 1,
+        cropping: false,
+        resourceType: 'image',
+        clientAllowedFormats: ['jpg', 'jpeg', 'png', 'webp'],
+        maxFileSize: 5000000,
+        styles: {
+          palette: {
+            window: '#FFFFFF',
+            windowBorder: '#c9a84c',
+            tabIcon: '#0a0a0a',
+            menuIcons: '#5A616A',
+            textDark: '#0a0a0a',
+            textLight: '#FFFFFF',
+            link: '#c9a84c',
+            action: '#c9a84c',
+            inactiveTabIcon: '#6b6b6b',
+            error: '#e74c3c',
+            inProgress: '#c9a84c',
+            complete: '#25D366',
+            sourceBg: '#f8f5f0'
+          }
+        }
+      }, (error, result) => {
+        if (!error && result && result.event === 'success') {
+          const url = result.info.secure_url;
+          document.getElementById('productImageUrl').value = url;
+          document.getElementById('imagePreview').src = url;
+          document.getElementById('imagePreview').style.display = 'block';
+          document.getElementById('removeImageBtn').style.display = 'inline-flex';
+          showToast('Photo uploaded successfully');
+        }
+      });
+      widget.open();
+    }
+
+    // ========== AUTH ==========
+    function openLogin() {
+      document.getElementById('adminPassword').value = '';
+      document.getElementById('loginError').style.display = 'none';
+      document.getElementById('adminLoginOverlay').classList.add('active');
+      setTimeout(() => document.getElementById('adminPassword').focus(), 100);
+    }
+
+    function attemptLogin() {
+      const pwd = document.getElementById('adminPassword').value;
+      if (pwd === ADMIN_PASSWORD) {
+        document.getElementById('adminLoginOverlay').classList.remove('active');
+        document.getElementById('adminDashboard').classList.add('active');
+        document.body.style.overflow = 'hidden';
+        renderAdminList();
+      } else {
+        document.getElementById('loginError').style.display = 'block';
+        document.getElementById('adminPassword').value = '';
+        document.getElementById('adminPassword').focus();
+      }
+    }
+
+    function logout() {
+      document.getElementById('adminDashboard').classList.remove('active');
+      document.body.style.overflow = '';
+      closeForm();
+    }
+
+    // ========== NAV / UI ==========
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      navbar.classList.toggle('scrolled', window.scrollY > 60);
+    });
+
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileOverlay = document.getElementById('mobileOverlay');
+
+    function toggleMenu() {
+      hamburger.classList.toggle('active');
+      mobileMenu.classList.toggle('active');
+      mobileOverlay.classList.toggle('active');
+      document.body.style.overflow = mobileMenu.classList.contains('active') ? 'hidden' : '';
+    }
+    hamburger.addEventListener('click', toggleMenu);
+    mobileOverlay.addEventListener('click', toggleMenu);
+    mobileMenu.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        if (mobileMenu.classList.contains('active')) toggleMenu();
+      });
+    });
+
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('.reveal').forEach(el => revealObserver.observe(el));
+
+    // ========== EVENTS ==========
+    document.getElementById('adminTrigger').addEventListener('click', openLogin);
+    document.getElementById('loginBtn').addEventListener('click', attemptLogin);
+    document.getElementById('cancelLoginBtn').addEventListener('click', () => {
+      document.getElementById('adminLoginOverlay').classList.remove('active');
+    });
+    document.getElementById('adminPassword').addEventListener('keydown', e => {
+      if (e.key === 'Enter') attemptLogin();
+    });
+    document.getElementById('logoutBtn').addEventListener('click', logout);
+    document.getElementById('addProductBtn').addEventListener('click', openAddForm);
+    document.getElementById('closeFormBtn').addEventListener('click', closeForm);
+    document.getElementById('cancelFormBtn').addEventListener('click', closeForm);
+    document.getElementById('saveProductBtn').addEventListener('click', saveProduct);
+    document.getElementById('addLabelBtn').addEventListener('click', addLabel);
+    document.getElementById('newLabelInput').addEventListener('keydown', e => {
+      if (e.key === 'Enter') { e.preventDefault(); addLabel(); }
+    });
+    document.getElementById('uploadImageBtn').addEventListener('click', openCloudinaryUpload);
+    document.getElementById('removeImageBtn').addEventListener('click', () => {
+      document.getElementById('productImageUrl').value = '';
+      document.getElementById('imagePreview').src = '';
+      document.getElementById('imagePreview').style.display = 'none';
+      document.getElementById('removeImageBtn').style.display = 'none';
+    });
+
+    // Close form on overlay click (not modal itself)
+    document.getElementById('formModalOverlay').addEventListener('click', e => {
+      if (e.target === e.currentTarget) closeForm();
+    });
+
+    // ========== INIT ==========
+    loadProducts();
+    renderProducts();
+  </script>
+</body>
+</html>
